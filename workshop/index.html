@@ -19,6 +19,9 @@
 
             <a-asset-item id="carA-obj" src="https://raw.githubusercontent.com/malalaalonso03/malalaalonso03.github.io/master/assets/carA/carA.obj"></a-asset-item>
             <a-asset-item id="carA-mtl" src="https://raw.githubusercontent.com/malalaalonso03/malalaalonso03.github.io/master/assets/carA/carA.mtl"></a-asset-item>
+
+            <a-asset-item id="tree-obj" src="https://raw.githubusercontent.com/malalaalonso03/malalaalonso03.github.io/master/assets/tree/tree.obj"></a-asset-item>
+            <a-asset-item id="tree-mtl" src="https://raw.githubusercontent.com/malalaalonso03/malalaalonso03.github.io/master/assets/tree/tree.mtl"></a-asset-item>
           </a-assets>
 
           <!-- we add the markers and reference the assets inside as entities -->
@@ -28,6 +31,10 @@
 
            <a-marker id="animated-marker2" type='barcode' value='2'>
               <a-entity obj-model="obj: #carA-obj; mtl: #carA-mtl"></a-entity>
+          </a-marker>
+
+           <a-marker id="animated-marker3" type='barcode' value='3'>
+              <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
           </a-marker>
 
           <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
